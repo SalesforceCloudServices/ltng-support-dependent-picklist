@@ -1,0 +1,23 @@
+<!--
+/**
+ * Component to demo the dependent picklists using force:recordEdit
+ * <p>Similar to the workaround described here:</p>
+ * @see https://success.salesforce.com/issues_view?id=a1p3A0000008gNBQAY
+ * @component: ltng_dependentPicklistRecordEdit
+**/
+-->
+<aura:component
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"
+    access="global"
+>
+    <!-- attributes -->
+    <aura:attribute name="recordId" type="String" />
+    <!-- private attributes -->
+    <!-- handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <!-- events -->
+    <!-- elements -->
+    <p>Record Form</p>
+    <force:recordEdit aura:id="edit-form" recordId="{!v.recordId}" />
+    <lightning:button label="Save" onclick="{!c.save}" />
+</aura:component>

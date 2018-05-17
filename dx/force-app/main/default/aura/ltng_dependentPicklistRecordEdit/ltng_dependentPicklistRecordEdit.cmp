@@ -6,8 +6,7 @@
  * @component: ltng_dependentPicklistRecordEdit
 **/
 -->
-<aura:component
-    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"
     access="global"
 >
     <!-- attributes -->
@@ -18,6 +17,6 @@
     <!-- events -->
     <!-- elements -->
     <p>Record Form</p>
-    <force:recordEdit aura:id="edit-form" recordId="{!v.recordId}" />
-    <lightning:button label="Save" onclick="{!c.save}" />
+    <force:recordEdit aura:id="edit-form" recordId="{!v.recordId}" onSaveSuccess="{!c.handleSaveSuccess}" />
+    <lightning:button label="Save" onclick="{!c.handleSave}" />
 </aura:component>

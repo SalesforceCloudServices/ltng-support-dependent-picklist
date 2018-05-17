@@ -190,15 +190,29 @@ Overview_of_what_the_project_represents
 
 **Please note: sample code (metadata api and dx formats) are available in the [mdapi](./mdapi) and [dx](./dx) folders above**
 
-# Demo
+# Record Edit Demo
 
-![Gif Demo](doc/images/demo.gif)
+![Gif Demo](doc/images/recordEditDemo.gif)
 
-What_the_demo_demonstrates_and_why_we_care
+The [recommended workaround](https://success.salesforce.com/issues_view?id=a1p3A0000008gNBQAY) at the moment is to leverage [force:recordEdit](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/aura_compref_force_recordEdit.htm?search_text=force:recordEdit) components to provide dependent picklists (based on record types)
 
-# TLDR How
+This provides dependent picklists that work with record types using the standard page layout - edit screens for that record.
 
-* Bullet_points_of_how_this_was_done
+# How
+
+* Create a `force:recordEdit` component
+  * Specify the record id
+  * Specify a controller handler for `onSaveSuccess`
+  * ex: <br />`<force:recordEdit aura:id="edit-form" ` <br /> ` recordId="{!v.recordId}"` <br /> ` onSaveSuccess="{!c.handleSaveSuccess}"` <br /> ` />`
+* Create a button to initiate the save
+  * `<lightning:button label="Save" onclick="{!c.handleSave}" />`
+* Create a component controller
+  * To handle the button click / start the save
+      * `handleSave : function(component){` <br /> ` component.find("edit-form").get("e.recordSave").fire();` <br /> `}`
+  * To handle the save completion
+      * `handleSaveSuccess : function(component){` <br /> `$A.get('e.force:refreshView').fire();` <br /> `$A.get('e.force:closeQuickAction').fire();` <br /> `}`
+
+**Note: this only specifies the record - and uses the current user's page layout.**
 
 ---
 

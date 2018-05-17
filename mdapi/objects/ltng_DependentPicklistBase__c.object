@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Base object for dependent picklist demo.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <label>Dependent Picklist Base</label>
+    <nameField>
+        <label>Dependent Picklist Base Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Dependent Picklist Bases</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Descr__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Level1__c</fullName>
+        <externalId>false</externalId>
+        <label>Level 1</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Level 1</fullName>
+                    <default>false</default>
+                    <label>No Level 1</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 1</fullName>
+                    <default>false</default>
+                    <label>Valid Level 1</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 1-A</fullName>
+                    <default>false</default>
+                    <label>Valid Level 1-A</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 1-B</fullName>
+                    <default>false</default>
+                    <label>Valid Level 1-B</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Level2__c</fullName>
+        <externalId>false</externalId>
+        <label>Level 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Level 2</fullName>
+                    <default>false</default>
+                    <label>No Level 2</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 2</fullName>
+                    <default>false</default>
+                    <label>Valid Level 2</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 2-A</fullName>
+                    <default>false</default>
+                    <label>Valid Level 2-A</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 2-B</fullName>
+                    <default>false</default>
+                    <label>Valid Level 2-B</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Level3__c</fullName>
+        <externalId>false</externalId>
+        <label>Level 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Level 3</fullName>
+                    <default>false</default>
+                    <label>No Level 3</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 3</fullName>
+                    <default>false</default>
+                    <label>Valid Level 3</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 3-A</fullName>
+                    <default>false</default>
+                    <label>Valid Level 3-A</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 3-B</fullName>
+                    <default>false</default>
+                    <label>Valid Level 3-B</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Level4__c</fullName>
+        <externalId>false</externalId>
+        <label>Level 4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Level 4</fullName>
+                    <default>false</default>
+                    <label>No Level 4</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 4</fullName>
+                    <default>false</default>
+                    <label>Valid Level 4</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 4-A</fullName>
+                    <default>false</default>
+                    <label>Valid Level 4-A</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 4-B</fullName>
+                    <default>false</default>
+                    <label>Valid Level 4-B</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Level5__c</fullName>
+        <externalId>false</externalId>
+        <label>Level 5</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Level 5</fullName>
+                    <default>false</default>
+                    <label>No Level 5</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 5</fullName>
+                    <default>false</default>
+                    <label>Valid Level 5</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 5-A</fullName>
+                    <default>false</default>
+                    <label>Valid Level 5-A</label>
+                </value>
+                <value>
+                    <fullName>Valid Level 5-B</fullName>
+                    <default>false</default>
+                    <label>Valid Level 5-B</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <recordTypes>
+        <fullName>Master</fullName>
+        <active>true</active>
+        <label>Master</label>
+        <picklistValues>
+            <picklist>Level1__c</picklist>
+            <values>
+                <fullName>No Level 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level2__c</picklist>
+            <values>
+                <fullName>No Level 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level3__c</picklist>
+            <values>
+                <fullName>No Level 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level4__c</picklist>
+            <values>
+                <fullName>No Level 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level5__c</picklist>
+            <values>
+                <fullName>No Level 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TypeA</fullName>
+        <active>true</active>
+        <label>Type A</label>
+        <picklistValues>
+            <picklist>Level1__c</picklist>
+            <values>
+                <fullName>No Level 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 1-A</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level2__c</picklist>
+            <values>
+                <fullName>No Level 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 2-A</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level3__c</picklist>
+            <values>
+                <fullName>No Level 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 3-A</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level4__c</picklist>
+            <values>
+                <fullName>No Level 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 4-A</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level5__c</picklist>
+            <values>
+                <fullName>No Level 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 5-A</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TypeB</fullName>
+        <active>true</active>
+        <label>Type B</label>
+        <picklistValues>
+            <picklist>Level1__c</picklist>
+            <values>
+                <fullName>No Level 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 1-B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level2__c</picklist>
+            <values>
+                <fullName>No Level 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 2-B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level3__c</picklist>
+            <values>
+                <fullName>No Level 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 3-B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level4__c</picklist>
+            <values>
+                <fullName>No Level 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 4-B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level5__c</picklist>
+            <values>
+                <fullName>No Level 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Valid Level 5-B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

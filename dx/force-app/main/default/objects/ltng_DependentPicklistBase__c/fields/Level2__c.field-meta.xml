@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level2__c</fullName>
+    <externalId>false</externalId>
+    <label>Level 2</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Level 2</fullName>
+                <default>false</default>
+                <label>No Level 2</label>
+            </value>
+            <value>
+                <fullName>Valid Level 2</fullName>
+                <default>false</default>
+                <label>Valid Level 2</label>
+            </value>
+            <value>
+                <fullName>Valid Level 2-A</fullName>
+                <default>false</default>
+                <label>Valid Level 2-A</label>
+            </value>
+            <value>
+                <fullName>Valid Level 2-B</fullName>
+                <default>false</default>
+                <label>Valid Level 2-B</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

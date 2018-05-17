@@ -1,0 +1,31 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "ltng_DependentPicklistBase__c",
+                "referenceId": "ltng_DependentPicklistBase__cRef1"
+            },
+            "Name": "Example Type A",
+            "Descr__c": "<p>Example Type A Record - includes No Value, Valid Value and Type A variant.</p><p>(Does not show Type B variants)</p>",
+            "Level1__c": "No Level 1"
+        },
+        {
+            "attributes": {
+                "type": "ltng_DependentPicklistBase__c",
+                "referenceId": "ltng_DependentPicklistBase__cRef2"
+            },
+            "Name": "Example Master",
+            "Descr__c": "<p>Example Master Record - only shows No Value and Valid Value.</p><p>(A and B variants are not shown)</p>",
+            "Level1__c": "No Level 1"
+        },
+        {
+            "attributes": {
+                "type": "ltng_DependentPicklistBase__c",
+                "referenceId": "ltng_DependentPicklistBase__cRef3"
+            },
+            "Name": "Example Type B",
+            "Descr__c": "<p>Example Type B Record - includes No Value, Valid Value and Type B variant.</p><p>(Does not show Type A variants)</p>",
+            "Level1__c": "No Level 1"
+        }
+    ]
+}

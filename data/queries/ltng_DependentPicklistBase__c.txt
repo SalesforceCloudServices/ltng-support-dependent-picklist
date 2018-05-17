@@ -1,0 +1,2 @@
+SELECT Name, Descr__c, Level1__c, Level2__c, Level3__c, Level4__c, Level5__c
+FROM ltng_DependentPicklistBase__c

@@ -4,10 +4,10 @@
 global with sharing class ltng_DependentPicklistDemoSetupCtrl {
 
     //-- static
-    global static final String PERMISSION_SET_NAME = 'DependentPicklistDemoParticipant ';
+    global static final String PERMISSION_SET_NAME = 'DependentPicklistDemoParticipant';
     global static final String DEFAULT_MISSING_PERMISSION_URL = '/one/one.app#/setup/PermSets/home';
 	
-    global static final String CHILD_SOBJECT_NAME = 'ltng_DependentPicklistBase__c';
+    global static final String CHILD_SOBJECT_NAME = 'ltng_DependentPicklistBase';
     
     //-- setup step (conveys to the component what was or will be run)
     /**

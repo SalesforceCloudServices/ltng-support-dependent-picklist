@@ -1,8 +1,33 @@
 # Overview
 
-Overview_of_what_the_project_represents
+We have two ways of filtering picklist options:
 
-**Please note: sample code (metadata api and dx formats) are available in the [mdapi](./mdapi) and [dx](./dx) folders above**
+**Controlling/Dependent Picklists**
+
+This is where the selection of one picklist (the controlling picklist) - specifies the options available for the controlled picklist.
+
+![Screenshot of Dependent Picklist](docs/images/PicklistDependencies.png)
+
+For the purpose of this discussion, all options for the following picklist are disabled if 'No Level X' is chosen (otherwise all options remain available)
+
+**RecordType Picklist Options**
+
+Record Types also can filter Picklist options - to only those available for that Record Type.
+
+![Screenshot of RecordType Filter](docs/images/RecordTypePicklist.png)
+
+For the purpose of this discussion:
+
+* Master - sees only Valid or Not Valid
+* Type A - sees Valid, Not Valid and Type A
+* Type B - sees Valid, Not Valid and Type B
+
+-----
+
+What we want is to have both of these filters applied on top of one another,
+so only options that are available (based on the controlling field and RecordType are shown)
+
+.
 
 # Record Edit Demo
 
@@ -46,9 +71,9 @@ This works very similar to an App Exchange install.
 
 Please login to an available sandbox and click the link below.
 
-[https://test.salesforce.com/packaging/installPackage.apexp?p0=04t6A000002sreiQAA](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t6A000002sreiQAA)
+[https://test.salesforce.com/packaging/installPackage.apexp?p0=04t6A000002srkXQAQ](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t6A000002srkXQAQ)
 
-(or simply navigate to `https://YOUR_SALESFORCE_INSTANCE/packaging/installPackage.apexp?p0= 04t6A000002sreiQAA` <br />
+(or simply navigate to `https://YOUR_SALESFORCE_INSTANCE/packaging/installPackage.apexp?p0=04t6A000002srkXQAQ` <br />
 if you are already logged in)
 
 ![Install for Admins](docs/images/installPackage.png)

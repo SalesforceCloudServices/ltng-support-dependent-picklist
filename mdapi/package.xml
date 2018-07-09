@@ -16,7 +16,7 @@
   </types>
   <types>
     <name>ContentAsset</name>
-    <members>lightningLogo</members>
+    <members>dependentPicklistAppLogo</members>
   </types>
   <types>
     <name>FlexiPage</name>
@@ -35,6 +35,10 @@
     <members>ltng_DependentPicklistBase__c.Level3__c</members>
     <members>ltng_DependentPicklistBase__c.Level4__c</members>
     <members>ltng_DependentPicklistBase__c.Level5__c</members>
+  </types>
+  <types>
+    <name>ListView</name>
+    <members>ltng_DependentPicklistBase__c.All</members>
   </types>
   <types>
     <name>CustomObject</name>

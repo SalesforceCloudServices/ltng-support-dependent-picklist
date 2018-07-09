@@ -4,10 +4,18 @@
 global with sharing class ltng_DependentPicklistDemoSetupCtrl {
 
     //-- static
-    global static final String PERMISSION_SET_NAME = 'DependentPicklistDemoParticipant ';
+
     global static final String DEFAULT_MISSING_PERMISSION_URL = '/one/one.app#/setup/PermSets/home';
-	
-    global static final String CHILD_SOBJECT_NAME = 'ltng_DependentPicklistBase__c';
+
+    global static final String PERMISSION_SET_NAME = 'DependentPicklistDemoParticipant';
+    global static final String CHILD_SOBJECT_NAME = 'ltng_DependentPicklistBase';
+
+    /** Record type developer names for the records to create **/
+    global static final String RT_MASTER_NAME = 'Master';
+    global static final String RT_TYPEA_NAME = 'TypeA';
+    global static final String RT_TYPEB_NAME = 'TypeB';
+
+    //-- 
     
     //-- setup step (conveys to the component what was or will be run)
     /**
@@ -184,21 +192,33 @@ global with sharing class ltng_DependentPicklistDemoSetupCtrl {
 
         //-- generated from data/trees/ltng_DependentPicklistBase__cs.json
         ltng_DependentPicklistBase__c[] baseRecords = new ltng_DependentPicklistBase__c[]{};
+
+        Map<String,Id> recordTypeMap = new Map<String,Id>();
+        for( RecordType rt : [
+            SELECT Id, DeveloperName, Name, SObjectType
+            FROM RecordType
+            WHERE SObjectType = 'ltng_DependentPicklistBase__c'
+        ]){
+            recordTypeMap.put(rt.DeveloperName, rt.Id);
+        }
         
-        baseRecords.add( new ltng_DependentPicklistBase__c(
-            Name = 'Example Type A',
-            Descr__c = '<p>Example Type A Record - includes No Value, Valid Value and Type A variant.</p><p>(Does not show Type B variants)</p>',
-            Level1__c = 'No Level 1'
-        ));
         baseRecords.add( new ltng_DependentPicklistBase__c(
             Name = 'Example Master',
             Descr__c = '<p>Example Master Record - only shows No Value and Valid Value.</p><p>(A and B variants are not shown)</p>',
-            Level1__c = 'No Level 1'
+            Level1__c = 'No Level 1',
+            RecordTypeId = recordTypeMap.get(RT_MASTER_NAME)
+        ));
+        baseRecords.add( new ltng_DependentPicklistBase__c(
+            Name = 'Example Type A',
+            Descr__c = '<p>Example Type A Record - includes No Value, Valid Value and Type A variant.</p><p>(Does not show Type B variants)</p>',
+            Level1__c = 'No Level 1',
+            RecordTypeId = recordTypeMap.get(RT_TYPEA_Name)
         ));
         baseRecords.add( new ltng_DependentPicklistBase__c(
             Name = 'Example Type B',
             Descr__c = '<p>Example Type B Record - includes No Value, Valid Value and Type B variant.</p><p>(Does not show Type A variants)</p>',
-            Level1__c = 'No Level 1'
+            Level1__c = 'No Level 1',
+            RecordTypeId = recordTypeMap.get(RT_TYPEB_NAME)
         ));
         
         try {

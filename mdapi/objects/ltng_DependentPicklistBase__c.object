@@ -113,6 +113,7 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Level1__c</controllingField>
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
@@ -137,6 +138,30 @@
                     <label>Valid Level 2-B</label>
                 </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 1</controllingFieldValue>
+                <controllingFieldValue>Valid Level 1-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 1-B</controllingFieldValue>
+                <valueName>No Level 2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 1</controllingFieldValue>
+                <controllingFieldValue>Valid Level 1-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 1-B</controllingFieldValue>
+                <valueName>Valid Level 2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 1</controllingFieldValue>
+                <controllingFieldValue>Valid Level 1-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 1-B</controllingFieldValue>
+                <valueName>Valid Level 2-A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 1</controllingFieldValue>
+                <controllingFieldValue>Valid Level 1-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 1-B</controllingFieldValue>
+                <valueName>Valid Level 2-B</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -147,6 +172,7 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Level2__c</controllingField>
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
@@ -171,6 +197,30 @@
                     <label>Valid Level 3-B</label>
                 </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 2</controllingFieldValue>
+                <controllingFieldValue>Valid Level 2-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 2-B</controllingFieldValue>
+                <valueName>No Level 3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 2</controllingFieldValue>
+                <controllingFieldValue>Valid Level 2-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 2-B</controllingFieldValue>
+                <valueName>Valid Level 3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 2</controllingFieldValue>
+                <controllingFieldValue>Valid Level 2-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 2-B</controllingFieldValue>
+                <valueName>Valid Level 3-A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 2</controllingFieldValue>
+                <controllingFieldValue>Valid Level 2-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 2-B</controllingFieldValue>
+                <valueName>Valid Level 3-B</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -181,6 +231,7 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Level3__c</controllingField>
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
@@ -205,6 +256,30 @@
                     <label>Valid Level 4-B</label>
                 </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 3</controllingFieldValue>
+                <controllingFieldValue>Valid Level 3-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 3-B</controllingFieldValue>
+                <valueName>No Level 4</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 3</controllingFieldValue>
+                <controllingFieldValue>Valid Level 3-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 3-B</controllingFieldValue>
+                <valueName>Valid Level 4</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 3</controllingFieldValue>
+                <controllingFieldValue>Valid Level 3-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 3-B</controllingFieldValue>
+                <valueName>Valid Level 4-A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 3</controllingFieldValue>
+                <controllingFieldValue>Valid Level 3-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 3-B</controllingFieldValue>
+                <valueName>Valid Level 4-B</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -215,6 +290,7 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Level4__c</controllingField>
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
@@ -239,6 +315,30 @@
                     <label>Valid Level 5-B</label>
                 </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 4</controllingFieldValue>
+                <controllingFieldValue>Valid Level 4-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 4-B</controllingFieldValue>
+                <valueName>No Level 5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 4</controllingFieldValue>
+                <controllingFieldValue>Valid Level 4-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 4-B</controllingFieldValue>
+                <valueName>Valid Level 5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 4</controllingFieldValue>
+                <controllingFieldValue>Valid Level 4-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 4-B</controllingFieldValue>
+                <valueName>Valid Level 5-A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Valid Level 4</controllingFieldValue>
+                <controllingFieldValue>Valid Level 4-A</controllingFieldValue>
+                <controllingFieldValue>Valid Level 4-B</controllingFieldValue>
+                <valueName>Valid Level 5-B</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <recordTypes>
@@ -461,4 +561,9 @@
             </values>
         </picklistValues>
     </recordTypes>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
 </CustomObject>
